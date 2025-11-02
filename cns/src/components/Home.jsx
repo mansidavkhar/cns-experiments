@@ -1,13 +1,16 @@
 import React from 'react';
-import Hero from './Hero';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Services from '../components/Services';
+import Contact from '../components/Contact';
 
-// This is the "Home" page component.
-// It's simple, just showing the Hero.
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
-      {/* You could add more components here like "Features", "Testimonials" */}
-    </div>
+      <About />
+      <Services />
+      <Contact />
+    </>
   );
 }
